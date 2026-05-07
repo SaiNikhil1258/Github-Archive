@@ -66,7 +66,7 @@ FROM
     `gcp_id.dev_intermediate_layer.silver_developer_activity`
 WHERE
     event_type = 'PushEvent'
-  AND date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
+  -- AND date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
 GROUP BY
     date,
     repo_name,

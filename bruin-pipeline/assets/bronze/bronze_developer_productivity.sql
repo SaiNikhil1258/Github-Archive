@@ -94,8 +94,8 @@ FROM
 LEFT JOIN 
     deduplicated_events e ON d.event_id = e.event_id 
 WHERE
-    d.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
-    AND e.event_id IS NOT NULL
+    -- d.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
+    e.event_id IS NOT NULL
     AND d.developer_login IS NOT NULL
     AND d.developer_login != ''
 QUALIFY ROW_NUMBER() OVER (

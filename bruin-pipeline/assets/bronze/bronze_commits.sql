@@ -83,8 +83,7 @@ LEFT JOIN
 ON 
     c.event_id = e.event_id
 WHERE
-    c.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
-    and
+    -- c.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
     e.event_id IS NOT NULL
 QUALIFY ROW_NUMBER() OVER (
     PARTITION BY c.commit_sha

@@ -56,8 +56,9 @@ SELECT
   CURRENT_TIMESTAMP() AS ingested_at
 FROM
   `gcp_id.dev_staging_layer.github_events` 
-WHERE
-  date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
+-- WHERE DATE(created_at) >= CURRENT_DATE() - 3
+-- WHERE
+  -- date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
 QUALIFY ROW_NUMBER() OVER (
     PARTITION BY event_id
     ORDER BY

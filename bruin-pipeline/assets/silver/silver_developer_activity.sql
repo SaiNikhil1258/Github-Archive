@@ -175,7 +175,7 @@ SELECT
 FROM
     `gcp_id.dev_staging_layer.bronze_layer_github_events` e
 WHERE
-    e.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
+    -- e.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
     e.actor_login IS NOT NULL
     AND e.actor_login NOT LIKE '%[bot]%'
     AND e.repo_name IS NOT NULL
