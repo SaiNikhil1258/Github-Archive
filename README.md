@@ -71,21 +71,55 @@ Based on the final BI reporting layer, the pipeline successfully powers the foll
 
 ### 1. Developer & Repository Activity Tracking
 * **Top Developers by Commits:** Identifies the most active contributors globally (e.g., `ttgds3asu`, `censameesss`), with top users pushing tens of millions of commits.
-![Dashboard Overview](https://github.com/user-attachments/assets/fbc67bb1-71d2-415b-b0d7-d5389a0c1210)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fbc67bb1-71d2-415b-b0d7-d5389a0c1210" width="480" alt="Dashboard Overview">
+</div>
+
 * **Total Commits by Repository:** Tracks the busiest codebases (e.g., `githubdungchung/trigger`, `frdpzk2/ppub`), allowing for the identification of highly active or automated repositories.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/29f879ae-2a81-4453-bff2-8bd2e0e17880" width="480" alt="Top Commits by repo">
+</div>
 
 ### 2. Event Distribution & Trends
 * **The Dominance of Push Events:** The platform processed over **1.74 Billion PushEvents** (accounting for 65.1% of all activity), far outpacing Create Events (327M) and Pull Request Events (137M).
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f1903e8d-dfc8-498e-a164-b5e32647c57f" width="480" alt="Events type heatmap">
+</div>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4d03c371-71cc-4850-a442-f4bb74dbde13" width="480" alt="Events type pie chart">
+</div>
+
 * **Time-Series Analysis:** Line charts track the daily volume of Push, Create, PR, and Watch events, showing a massive peak in activity around March-May before stabilizing.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3c42a4a8-9b6a-4aef-ac72-29508a310eb0" width="480" alt="Events type by date">
+</div>
 
 ### 3. Developer Productivity & PR Analytics
 * **Pull Request Volume:** Tracks the highest PR generators, notably highlighting heavy automation and AI presence (e.g., `direwolf-github`, `Copilot`, `aws-aemilia-pdx`).
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ad8a432a-e88c-44b2-b615-5b1299879e64" width="480" alt="Total PRs by developer">
+</div>
+
 * **Merge Rate vs. PR Volume:** Scatter plots analyze developer efficiency by comparing total PR output against successful merge rates, identifying code review bottlenecks.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/82eb1f28-c419-4a6e-978f-b0c899cd01c9" width="480" alt="Distribution of total PRs by merge rate">
+</div>
+
 * **Merged vs. Unmerged PRs:** Stacked bar charts provide a month-by-month breakdown of PR resolution, showing peak PR creation (and subsequent unmerged backlog) in March and April.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1527dec9-3d2f-477f-93b6-ccdfc7291237" width="480" alt="Merged PRs and unmerged PRs by month">
+</div>
 
 ### 4. Codebase Churn & PR Sizing
 * **Average PR Size:** The data shows average PR sizes peaking at ~85 lines between May and August before dropping sharply toward the end of the year.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e331238e-f802-4227-94bf-12b876403c99" width="480" alt="Average PR size over time">
+</div>
+
 * **Lines of Code (LOC) Churn:** The pipeline processed massive code additions peaking at nearly **60 Billion lines added** in early spring, compared to a steady ~20 Billion lines deleted, indicating aggressive codebase expansion phases.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b956bff6-16f6-4f07-adff-a031fb88af07" width="480" alt="Total lines added & deleted by month">
+</div>
 
 ---
 
