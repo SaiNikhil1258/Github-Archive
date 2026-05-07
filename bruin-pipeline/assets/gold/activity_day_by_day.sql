@@ -73,8 +73,8 @@ SELECT
     CURRENT_TIMESTAMP()                         AS ingested_at
 FROM
     `gcp_id.dev_intermediate_layer.silver_developer_activity`
--- WHERE
---   date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
+WHERE
+  date >= DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY)
 GROUP BY
     date,
     month,

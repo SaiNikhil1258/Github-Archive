@@ -8,6 +8,15 @@ catchup: false
 default_connections:
   google_cloud_platform: "gcp_default" 
 
+
+variables:
+  - name: gcs_bucket
+    type: string
+    default: "bucket-name"
+  - name: thread_multiplier
+    type: integer
+    default: 4
+
 # Optional: Add notifications if the Zoomcamp pipeline fails
 # notifications:
 #   - type: email

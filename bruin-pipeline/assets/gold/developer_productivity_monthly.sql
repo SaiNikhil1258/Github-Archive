@@ -113,8 +113,8 @@ FROM
     `gcp_id.dev_intermediate_layer.silver_developer_activity`
 WHERE
     event_type = 'PullRequestEvent'
-    -- AND year >= EXTRACT(YEAR FROM DATE_SUB(CURRENT_DATE(), INTERVAL 3 MONTH))
-    -- AND month >= EXTRACT(MONTH FROM DATE_SUB(CURRENT_DATE(), INTERVAL 3 MONTH))
+    AND year >= EXTRACT(YEAR FROM DATE_SUB(CURRENT_DATE(), INTERVAL 3 MONTH))
+    AND month >= EXTRACT(MONTH FROM DATE_SUB(CURRENT_DATE(), INTERVAL 3 MONTH))
 GROUP BY
     year,
     month,

@@ -107,7 +107,7 @@ SELECT
     CURRENT_TIMESTAMP()                                             AS ingested_at
 FROM
     `gcp_id.dev_intermediate_layer.silver_repo_summary`
--- WHERE date >= DATE_TRUNC(DATE_SUB(CURRENT_DATE(), INTERVAL 2 MONTH), MONTH))
+WHERE date >= DATE_TRUNC(DATE_SUB(CURRENT_DATE(), INTERVAL 2 MONTH), MONTH))
 GROUP BY
     repo_name,
     year,
