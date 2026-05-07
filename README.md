@@ -82,12 +82,16 @@ Based on the final BI reporting layer, the pipeline successfully powers the foll
 
 ### 2. Event Distribution & Trends
 * **The Dominance of Push Events:** The platform processed over **1.74 Billion PushEvents** (accounting for 65.1% of all activity), far outpacing Create Events (327M) and Pull Request Events (137M).
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/f1903e8d-dfc8-498e-a164-b5e32647c57f" width="480" alt="Events type heatmap">
-</div>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/4d03c371-71cc-4850-a442-f4bb74dbde13" width="480" alt="Events type pie chart">
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f1903e8d-dfc8-498e-a164-b5e32647c57f" width="480" alt="Events type heatmap">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4d03c371-71cc-4850-a442-f4bb74dbde13" width="480" alt="Events type pie chart">
+    </td>
+  </tr>
+</table>
 
 * **Time-Series Analysis:** Line charts track the daily volume of Push, Create, PR, and Watch events, showing a massive peak in activity around March-May before stabilizing.
 <div align="center">
