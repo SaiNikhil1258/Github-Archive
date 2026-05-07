@@ -1,0 +1,17 @@
+name: github_medallion_pipeline
+# description: "End-to-end GitHub events pipeline from Raw to Gold"
+schedule: "0 2 1 * *" # Runs daily at 2 AM
+start_date: "2024-01-01"
+catchup: false
+
+# This tells Bruin which connection to use if not specified in the asset
+default_connections:
+  google_cloud_platform: "gcp_default" 
+
+# Optional: Add notifications if the Zoomcamp pipeline fails
+# notifications:
+#   - type: email
+#     targets:
+#       - "your-email@example.com"
+#     states:
+#       - failed
